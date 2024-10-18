@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "brand_name": "Apple",
+        "model": "iPhone 15",
+        "img": "https://www.apple.com/v/iphone-15/b/images/overview/hero/hero_static__d2p5mf9oydsa_large.jpg",
+        "rating": 4.8,
+        "price": 999.99
+    },
+    {
+        "id": 2,
+        "brand_name": "Samsung",
+        "model": "Galaxy S23",
+        "img": "https://images.samsung.com/is/image/samsung/assets/global/galaxy/s23/images/galaxy-s23-5g-hero.jpg?$720_576_PNG$",
+        "rating": 4.7,
+        "price": 899.99
+    },
+    {
+        "id": 3,
+        "brand_name": "Google",
+        "model": "Pixel 8",
+        "img": "https://store.google.com/us/product/images/pixel_8-5.png",
+        "rating": 4.6,
+        "price": 699.99
+    },
+    {
+        "id": 4,
+        "brand_name": "OnePlus",
+        "model": "OnePlus 11",
+        "img": "https://www.oneplus.com/global/oneplus11/images/oneplus11-hero.jpg",
+        "rating": 4.5,
+        "price": 799.99
+    },
+    {
+        "id": 5,
+        "brand_name": "Xiaomi",
+        "model": "Mi 13",
+        "img": "https://i01.appmifile.com/webfile/globalimg/products/mi13/hero.png",
+        "rating": 4.4,
+        "price": 749.99
+    },
+    {
+        "id": 6,
+        "brand_name": "Sony",
+        "model": "Xperia 1 IV",
+        "img": "https://www.sony.com/image/6c3c6decb5b93a4e0f8652c3a49b76d8?fmt=pjpeg&wid=720&bgcolor=FFFFFF&alpha=0.5",
+        "rating": 4.3,
+        "price": 1099.99
+    },
+    {
+        "id": 7,
+        "brand_name": "Nokia",
+        "model": "Nokia G60",
+        "img": "https://www.nokia.com/global/images/nokia-g60-5g.png",
+        "rating": 4.2,
+        "price": 349.99
+    },
+    {
+        "id": 8,
+        "brand_name": "Motorola",
+        "model": "Moto G Power",
+        "img": "https://www.motorola.com/content/dam/motorola/global/2021/moto-g-power/moto-g-power-2021.png",
+        "rating": 4.1,
+        "price": 249.99
+    }
+]
