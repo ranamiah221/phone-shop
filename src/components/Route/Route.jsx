@@ -4,6 +4,7 @@ import ErrorPage from "../../pages/ErrorPage/ErrorPage";
 import Home from "../../pages/Home/Home";
 import Favorites from './../../pages/Favorites/Favorites';
 import Login from './../../pages/Login/Login';
+import PhoneDetails from "../../pages/PhoneDetails/PhoneDetails";
 
 
 const Route = createBrowserRouter([
@@ -16,6 +17,11 @@ const Route = createBrowserRouter([
                 path:'/',
                 element:<Home></Home>,
                 loader:()=>fetch('phones.json')
+            },
+            {
+              path:'/phones/:id',
+              element:<PhoneDetails></PhoneDetails>,
+
             },
             {
                 path:'/favorites',
