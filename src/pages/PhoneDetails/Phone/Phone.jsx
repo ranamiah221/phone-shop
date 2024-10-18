@@ -6,7 +6,7 @@ const Phone = ({phoneDetails, handleAddToFavorites}) => {
     
     
     return (
-        <div className="relative flex flex-col md:flex-row w-1/2 mx-auto my-6 bg-white shadow-2xl rounded-lg h-96">
+        <div className="relative flex flex-col md:flex-row w-1/2 mx-auto mt-2 mb-6 bg-white shadow-2xl rounded-lg h-96">
         <div className="relative p-2.5 md:w-3/5 shrink-0 overflow-hidden">
           <img
             src={phoneDetails?.img}

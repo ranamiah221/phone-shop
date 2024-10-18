@@ -52,7 +52,15 @@ const PhoneDetails = () => {
     // Go Home button functionality
     
     return (
-        <Phone phoneDetails={phoneDetails} handleAddToFavorites={handleAddToFavorites} ></Phone>
+        <>
+         <div className="flex justify-center items-center h-40 bg-gradient-to-r from-cyan-200 to-blue-300 rounded-md shadow-lg shadow-sky-600 mt-1">
+            <div>
+                <h2 className="text-2xl font-semibold">Phone Details</h2>
+            </div>
+         </div>
+         <Phone phoneDetails={phoneDetails} handleAddToFavorites={handleAddToFavorites} ></Phone>
+        </>
+       
     );
 };
 

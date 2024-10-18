@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import FavoriteCard from "../../components/FavoriteCard/FavoriteCard";
 import NoItems from "../../components/NoIteams/NoItems";
+import Swal from "sweetalert2";
 
 
 const Favorites = () => {
@@ -31,6 +32,11 @@ const Favorites = () => {
   
    const handleDelete=()=>{
     localStorage.clear('favorites');
+    Swal.fire({
+        title: "Delete!",
+        text: "Delete All",
+        icon: "success"
+      });
     setFavoriteItem([]);
     setNodata('No Data Found');
 
