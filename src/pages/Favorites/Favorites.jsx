@@ -49,7 +49,7 @@ const Favorites = () => {
             </div>
              <div className="flex justify-center">
                  {
-                  favoriteItems.length >= 2 && <button className="btn btn-accent hover:bg-green-500 mt-10 mb-5 text-white" onClick={()=>setIsShow(!isShow)}> { isShow ? 'See More':'See Less'}</button>
+                  favoriteItems.length > 2 && <button className="btn btn-accent hover:bg-green-500 mt-10 mb-5 text-white" onClick={()=>setIsShow(!isShow)}> { isShow ? 'See Less':'See More'}</button>
                  } 
              </div>
         </div>
