@@ -7,18 +7,28 @@ const Favorites = () => {
     const [favoriteItems, setFavoriteItem]=useState([]);
     const [noData, setNodata]= useState(false);
     const [isShow, setIsShow]=useState('false')
+    const [totalPrice, setTotalPrice]=useState();
+
+
      
   useEffect(()=>{
-    const data = JSON.parse(localStorage.getItem('favorites'))
+    const favorites = JSON.parse(localStorage.getItem('favorites'))
+  
+    if(favorites){
+       setFavoriteItem(favorites)
+       const longFloatTotal= favorites.reduce((previousValue, currentItem)=> previousValue + currentItem.price,0)
+       const total=longFloatTotal.toFixed(2);
+       setTotalPrice(total)
+     
 
-    if(data){
-       setFavoriteItem(data)
     }
     else{
         setNodata("No Data Found")
     }
+
+    
   },[])
-  console.log("nodata = ",noData)
+  
    const handleDelete=()=>{
     localStorage.clear('favorites');
     setFavoriteItem([]);
@@ -36,7 +46,7 @@ const Favorites = () => {
         <button onClick={handleDelete} className="btn btn-accent hover:bg-green-400 w-40">Delete All</button>
         </div>
         <div className="text-center">
-            <p className="text-2xl font-normal">Total Favorite items price : </p>
+            <p className="text-2xl font-normal">Total Favorite items price : <span className="text-2xl font-semibold">${totalPrice}</span> </p>
         </div>
         <div >
             <div className="grid grid-cols-2 gap-5 mt-5">
