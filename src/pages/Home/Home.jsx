@@ -3,6 +3,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 
 import PhoneCard from "../../components/PhoneCard/PhoneCard";
 import { useState } from "react";
+import Banner from "../../components/Banner/Banner";
 
 
 const Home = () => {
@@ -10,12 +11,13 @@ const Home = () => {
     const [isShow, setIsShow]= useState(false);
     return (
         <div className="">
+            <Banner></Banner>
              <SectionTitle titleText='Our Phones Collection'></SectionTitle>
              <div className="grid grid-cols-3 gap-5">
               { 
               isShow
-               ? phones.map(phone=> <PhoneCard key={phone.id} phone={phone}></PhoneCard>)
-               : phones.slice(0,3).map(phone=> <PhoneCard key={phone.id} phone={phone}></PhoneCard>)
+               ? phones?.map(phone=> <PhoneCard key={phone.id} phone={phone}></PhoneCard>)
+               : phones?.slice(0,3).map(phone=> <PhoneCard key={phone.id} phone={phone}></PhoneCard>)
               }
               
         </div>
