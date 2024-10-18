@@ -11,7 +11,7 @@ const Phone = ({phoneDetails, handleAddToFavorites}) => {
           <img
             src={phoneDetails?.img}
             alt="card-image"
-            className="h-full w-full rounded-md md:rounded-lg object-cover"
+            className="h-full w-full p-3 rounded-md md:rounded-lg object-cover"
           />
         </div>
         <div className="p-6 flex items-center justify-start">

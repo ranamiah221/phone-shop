@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import Phones from "../../components/Phones/Phones";
+
+import PhoneCard from "../../components/PhoneCard/PhoneCard";
 
 
 const Home = () => {
@@ -8,7 +9,11 @@ const Home = () => {
     return (
         <div className="">
              <SectionTitle titleText='Our Phones Collection'></SectionTitle>
-             <Phones phones={phones}></Phones>
+             <div className="grid grid-cols-3 gap-5">
+              {
+                 phones.map(phone=> <PhoneCard key={phone.id} phone={phone}></PhoneCard>)  
+              }
+        </div>
         </div>
     );
 };

@@ -6,7 +6,6 @@ import Favorites from './../../pages/Favorites/Favorites';
 import Login from './../../pages/Login/Login';
 import PhoneDetails from "../../pages/PhoneDetails/PhoneDetails";
 
-
 const Route = createBrowserRouter([
     {
         path:'/',
@@ -18,6 +17,7 @@ const Route = createBrowserRouter([
                 element:<Home></Home>,
                 loader:()=>fetch('phones.json')
             },
+            
             {
               path:'/phones/:id',
               element:<PhoneDetails></PhoneDetails>,
